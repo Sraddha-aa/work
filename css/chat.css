@@ -1,0 +1,124 @@
+html {
+  background-color: #c08c3349;
+}
+
+body {
+  width: 90%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  display: flex;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: auto;
+  background-color: #FFF;
+  margin:0 auto;
+  padding: 20px 30px;
+}
+
+.call-outs-container{
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+  display: flex;
+}
+
+.call-out{
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 1;          /* for all children to be equal width? */
+}
+
+.call-out:nth-child(1){background-color: #a28657;}
+.call-out:nth-child(2){background-color: #a09264;}
+.call-out:nth-child(3){background-color: #815d2e;}
+
+
+header {
+  padding-top: 20px;
+   color: #2a1c09;
+   text-align:left;
+}
+
+header h2{
+   color: #815d2e;
+}
+
+header h1 {
+   height: 100px;
+   margin: 0;
+   text-align: center;
+   padding-top: 50px;
+   background-image: url(../images/fores.jpg);
+   background-position: center center;
+   background-size: cover;
+}
+
+header p {
+   margin: 5px;
+   text-align: left;
+}
+
+
+
+.box-a{
+  background-color: #a09264;
+  background-image: linear-gradient(to bottom, #a28657,#fff);
+  padding: 30px;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+}
+
+form{
+  background-color: #ececec;
+  padding: 30px 40px;
+}
+
+.form-row{
+  padding: auto;
+  display: flex;
+
+}
+
+.form-row label{
+  padding-right: 10px;
+
+}
+
+
+
+input{
+  font-family: Tahoma, sans-serif ;
+  font-size: 100%;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  height: 40PX;
+  padding: 0 10px;
+  display: block;
+  border:1px solid #cdcdcd ;
+  margin-bottom: 20PX;
+  margin-top: 20px;
+  outline: none;                                                                   
+  box-sizing:border-box;                                                           /* for allignment with other box and text */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus{
+  border: 1px solid rgb(234, 245, 163);
+  box-shadow:inset 2px 2px 2px rgb( 0, 0, 0, .13);
+}
+
+
+footer {
+   text-align: center;
+   color: #999;
+}
+
+  
