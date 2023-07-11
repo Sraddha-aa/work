@@ -1,7 +1,7 @@
 html {
   background-color: #f8f9f3;
 }
-
+ 
 body {
   width: 1320px;
   margin: 20px; /* Center align the content horizontally */
@@ -16,70 +16,40 @@ body {
   font-size: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   width: 100%;
-  background-color: #56afa5;
+  background-color: #787d7d;
   padding: 10px;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
 
-.call-outs-container {
+.parent {
   margin-top: 30px;
-  padding-left: 20px;
-  background-color: #53959a;
-  box-sizing: border-box;
+  padding: 20PX;
+  background-color: #7f8586;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
-.main {
-  max-width: 1400px;
-  margin: 40px auto 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.sub {
-  background-color: #577677;
-  margin-bottom: 20px;
-  flex-basis: calc(33.33% - 20px);               /* Adjust width and add margin between columns */
+.item {
+  background-color: #b9ced4;
   padding: 20px;
-  flex:1;
+  font-size: 0.77rem; 
+  line-height: 1.7;
 }
 
-.sub :last-child {
-  margin-right: 0;   /*To avoid space horizontally between lastbox border and the aligned box above*/
-  box-sizing: border-box;
-
-}
-
-sub :nth-child(1) {background-color:#4a8d8f;}
-sub :nth-child(2) {background-color: #97805f;}
-sub :nth-child(3) {background-color: #b2df91 ;}
-
-
-
-.feature-one{
-  flex-direction: column;
-  flex: 2;       /* to occupy the given width of layout at a proportion of 2:1:1 */
-}
-
-.sidebar-one{
-  flex-basis: 100%;
-  flex: 1;        
-  order: 1;      /* to put this colum first */
-}
-.sidebar-two {
-  flex-basis: 100%;
-  flex: 1;
+.item p{
+  margin: 0;
 }
 
 header {
-  color: #07502a;
+  color: #0b0c0b;
   text-align: center; /* Center align the text */
 }
 
 
 form {
-  background-color: #b2e3eb;
+  background-color: #FFF;
   width: 100%;
   padding: 10px;
   text-align: center;      
@@ -119,6 +89,6 @@ input[type="password"]:focus {
 
 footer {
   text-align: center;
-  color: #999;
+  color: #090909;
   margin-top: 20px; 
 }
