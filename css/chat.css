@@ -15,9 +15,9 @@ body {
 .container {
   font-size: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  width: 100%;
+  width: 100%; 
   background-color: #787d7d;
-  padding: 10px;
+  padding: 10px; 
   box-sizing: border-box;
   margin-bottom: 10px;
 }
@@ -38,8 +38,40 @@ body {
   line-height: 1.7;
 }
 
+.parent :nth-child(1){
+  display: grid;
+  font-size: 1rem;
+  grid-row: span 4;
+  align-content: center;
+}
+
 .item p{
   margin: 0;
+}
+
+.center-class {
+  display: grid;
+  width: 100%;
+  margin-top: 20px;
+  border:1px solid rgb(0,0,0);
+  background-color: antiquewhite;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.center-class p{
+  margin: auto;
+}
+
+.full-width-example {
+  display: grid;
+  grid-template-columns: minmax(auto,900px);
+  justify-content: center;
+  background-color: rgb(208, 175, 92) ;
+  color: #070707;
+  line-height: 1.7 ;
+  padding: 20px ;
+  margin-top: 20px;
 }
 
 header {
