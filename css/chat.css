@@ -74,6 +74,68 @@ body {
   margin-top: 20px;
 }
 
+.photo-example{
+  max-width: 700px;
+  display: grid;
+  grid-column: 3/5;
+  margin: 20px 0;
+}
+
+.photo-example img {
+  display: block;
+  max-width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.overlay-text{
+  align-self: end;
+  color: #FFF;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  grid-row: 1;
+  grid-column: 1;
+  padding: 20px;
+}
+
+.layout {
+  display: grid ;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-areas: "mainhea mainhea"
+                        "s mai"
+                        "s foot";
+}
+
+
+.sidebar{
+  background-color: #b9ced4;
+  color: #070707 ;
+  padding: 20px;
+  font-size: 1.7em ;
+  grid-area: s;
+}
+
+.main{
+  background-color: antiquewhite;
+  padding: 20px ;
+  line-height: 1.7;
+  grid-area: mai ;
+}
+.main-header{
+  background-color: #cdcdcd ;
+  color: #060605;
+  padding: 20px ;
+  grid-area: mainhea;
+}
+.footer{
+  background-color: #787d7d;
+  color: #090909 ;
+  padding: 20px ;
+  grid-area: foot;
+  align-self: end;
+}
+
 header {
   color: #0b0c0b;
   text-align: center; /* Center align the text */
@@ -117,6 +179,56 @@ input[type="password"]:focus {
   border: 1px solid rgb(234, 245, 163);
   box-shadow: inset 2px 2px 2px rgb(0, 0, 0, .13);
   box-sizing: border-box;
+}
+
+.art-banner{
+  display: grid;
+  width: 50%;
+  max-height: 70vh;
+  grid-template-columns: 20px 1fr 1fr 1fr 20px;
+  grid-template-rows:20px 1fr 1fr 1fr 20px;
+  background-color:#dfecec ;
+}
+
+.art-banner img{
+  opacity: 0.1;
+  background: url(images/forest.jpg);
+  width: 50%;
+  max-height: 70vh;
+  background-size: cover;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.banner-text{
+  grid-column: 2/span 2;
+  grid-row: 3;
+  align-self: center;
+  justify-self: center ;
+  color: #903838;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.badge{
+  display: grid;
+  grid-column: 4/5 ;
+  grid-row: 3/4 ;
+  align-self: center;
+  justify-self: center;
+  color: #7f8e33 ;
+  font-size: 2.5vw;
+  font-weight: bold;
+  align-content: center;
+  margin: auto;
+  width: 10vw;
+  height: 10vh ;
+  border-radius: 50% ;
+  transform:rotate(15deg);
+}
+
+.badge p{
+  margin: auto;
 }
 
 footer {
