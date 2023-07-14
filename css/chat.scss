@@ -1,1 +1,22 @@
-$beautifulhue: #ec7705
+$primarycolor:#ec7705;
+body {
+    font-family: helvetica,sans-serif;
+}
+a{
+    color: #ec7705;
+}
+
+@import 'header';
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after{
+    clear: both;
+}
+.group{
+    zoom: 1;
+}
