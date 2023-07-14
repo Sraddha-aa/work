@@ -3,15 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>Studying</title>
-    <meta name="viewport content="width=device-width, initial-scale="1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/chat.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/cycle2.js"></script>
 </head>
 
 <body>
-    <header class="section">
+    <header>
         <div class="container">
-          <h1>Website Title</h1>
-          <p class="hide-small">Website slogan included here</p>
+            <h1>Website Title</h1>
+            <p class="hide-small">Website slogan included here</p>
 
             <nav class="site-nav">
                 <ul class="group">
@@ -24,51 +26,51 @@
             </nav>
         </div>
     </header>
-    <div class="content-area group selection">
-        <div class="container">
-             <h2>Welcome to the page!</h2>
-            
-        <div class="boxes">
-        <div class="box-a">
-            <p>key feature 1</p>
-        </div>
 
-        <div class="box-a">
-            <p>key feature 2</p>
-        </div>
-
-        <div class="box-a">
-            <p>key feature 3</p>
-        </div>
-
-        <div class="box-a">
-            <p>key feature 4</p>
-        </div>
-        </div>
-        <h3>Sidebar heading!</h3>
-        <p>Wildlife conservation refers to the protection, preservation, and management of wild animals, plants, and 
+    <div class="selection">
+        <p class="selection-box">
+            Wildlife conservation refers to the protection, preservation, and management of wild animals, plants, and 
             their habitats. It aims to ensure the long-term survival and well-being of various species and ecosystems.
             Wildlife conservation is crucial for maintaining biodiversity, promoting ecological balance, and 
-            preserving natural resources for future generations.</p>
-        
-        <p>This intensifies the need for the conservation of wildlife. Eventhough the restricted section of the forest 
-            is well under protection, there still exists the need to prioritise the wildlife in a uplifted manner.Several policies
-            exists in todays world which enables the society to keep up with this concerning matter. However , this is not 
-            given prime importance.</p>
-        <div class="image-transform">
-        <img src="images/forest.jpg", alt="second image">
+            preserving natural resources for future generations.This intensifies the need for the conservation of wildlife.
+            Even though the restricted section of the forest is well under protection, there still exists the need to prioritize 
+            wildlife in an uplifted manner. Several policies exist in today's world that enables society to keep up with this 
+            concerning matter. However, this is not given prime importance.Even though the restricted section of the forest is
+             well under protection, there still exists the need to prioritize wildlife in an uplifted manner. Several policies
+            exist in today's world that enables society to keep up with this concerning matter. However, this is not 
+            given prime importance. It aims to ensure the long-term survival and well-being of various species and ecosystems.
+            Wildlife conservation is crucial for maintaining biodiversity, promoting ecological balance, and 
+            preserving natural resources for future generations. </p>
+
+<div class="image-banner cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+    <span class="cycle-prev">&laquo;</span>
+    <span class="cycle-next">&raquo</span>
+    <span class="cycle-pager"></span>
+
+    <div class="slide">
+        <img src="images/hippo.jpg" alt="hippo">
+        <div class="slide-text">
+            <h3> Hippo here! </h3>
+            <p>Yes, I am hippo <a href="#" class="btn-a"> Call to action!</a></p>
         </div>
     </div>
-    <p class="container"> Eventhough the restricted section of the forest is well under protection, there still exists the need to prioritise the wildlife in a uplifted manner.Several policies
-        exists in todays world which enables the society to keep up with this concerning matter. However , this is not 
-        given prime importance. It aims to ensure the long-term survival and well-being of various species and ecosystems.
-        Wildlife conservation is crucial for maintaining biodiversity, promoting ecological balance, and 
-        preserving natural resources for future generations. </p>
-    <div class="image-banner">
-        <img src="images/wildlife.jpg" alt=" wildlife photography">
-        <div class="banner-description"> 
-            <p> This confirms the need of wildlife conservation.</p>
+
+    <div class="slide">
+        <img src="images/antelope.jpg" alt="antelope">
+        <div class="slide-text">
+            <h3>Antelope here! </h3>
+            <p>Yes, I am antelope <a href="#" class="btn-a"> Call to action!</a> </p>
         </div>
     </div>
+
+    <div class="slide">
+        <img src="images/ostrich.jpg">
+        <div class="slide-text">
+            <h3>Ostrich here! </h3>
+            <p>Yes, I am ostrich <a href="#" class="btn-a"> Call to action!</a> </p>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>
