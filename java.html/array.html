@@ -2,41 +2,17 @@
 <html>
 
   <head>
-
   </head>
 
   <body>    
     <p id="para1">This is para 1</p>
-    <p id="para2">This is para 2</p>
-    <p id="para3">This is para 3</p>
-    <p id="para4">This is para 4</p>
-	<p id="para5">This is para 5</p>
-
     
   
     <script>
-	
-	  var car1='Toyota';
-	  var car2='Honda';
-	  var car3='Hundai';
+	  var cars=[' RangeRover',' BMW',' Mazda',' Mini cooper', ' alpha romeo'];
+      cars.push(' toyota');
 	  
-	  var cars=['RangeRover','BMW','Mazda','mini cooper'];
-	  
-	  document.getElementById("para1").innerHTML=cars[0];
-	  document.getElementById("para2").innerHTML=cars[1];
-	  document.getElementById("para3").innerHTML=cars[2];
-	  document.getElementById("para4").innerHTML=cars[3];
-	  
-	   cars[4]="Mercedes";
-	   document.getElementById("para5").innerHTML=cars[4];
-	  
-	  var fruits=[];
-	  fruits[0]="Apple";
-	  fruits[1]="Banana";
-	  fruits[2]="Mango";
-	 
-	  document.getElementById("para4").innerHTML=fruits[1];
-	 
+	  document.getElementById("para1").innerHTML=cars.sort();
 
 	</script>
   </body>

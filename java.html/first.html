@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(119, 119, 10);
+            margin: 20px;
+        }
+        #div2 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin: 20px;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
 
-    </head>
-    <body>
-        <p id="p1"> This is green</p>
-        <p id="p2"> This is blue </p>
-        <p id="p3"> This is red</p>
+    <button id="btn">Click me</button>
+    <button onclick="firstFunction()">Click me</button>
+    <button ondblclick="firstFunction()">Double click me</button>
+    <br><br>
 
-        <h1 class="heading">This is heading 1</h1>
-        <h1 class="heading">This is heading 2</h1>
-        <h1 class="heading">This is heading 3</h1>
+    <div id="div1" onmouseover="makeBig()" onmouseout="makeSmall()"></div>
+    <br><br>
+    <p id="demo">Demo</p>
+    <div id="div2" onclick="changeColor('blue')"></div>
+    <img src="antelope.jpg" onerror="imageError()">
 
-        <h3> Head 1</h3>
-        <h3> Head 2</h3>
-        <h3> Head 3</h3>
-        
-        <p id='demo'> This is the content</p>
+    <button onclick="changeColor('yellow')"> change color </button>
+    <button onclick="changeColor('red')"> change color</button>
 
-        <div id="div 1"> This is div 1</div>
-        <p id="para"> This is paragraph</p>
+    <script>
+        document.getElementById('btn').onclick = firstFunction;
 
-        <script>
-            var x='hello ';
-            var y='world';
-            
-            x="john";
+        var x = 0;
+        function scrollFunction() {
+            x += 1;
+            document.getElementById('demo').innerHTML = 'You have scrolled ' + x + ' times';
+        }
 
-            alert(x);
+        function imageError() {
+            alert('Failed to load image');
+        }
 
-            var para = document.getElementById('para');
-            para.innerHTML=x+y;
-            para.style.color='red';
+        function firstFunction() {
+            alert('Yes, this is the webpage');
+        }
 
+        function makeBig() {
+            document.getElementById('div1').style.height = '300px';
+            document.getElementById('div1').style.width = '300px';
+        }
 
+        function makeSmall() {
+            document.getElementById('div1').style.height = '100px';
+            document.getElementById('div1').style.width = '100px';
+        }
 
-            document.getElementById('p2').style.color='blue';
-            document.getElementsByClassName('heading')[0].style.color='green';
-            document.getElementsByTagName('h3')[2].style.color='yellow';
-            document.getElementById('demo').innerHTML='The content is changed';
+        function changeColor(color) {
+            document.getElementById('div2').style.backgroundColor = color;
+        }
+    </script>
 
-            document.getElementById('div 1').style.height='200px';
-            document.getElementById('div 1').style.width='200px';
-            document.getElementById('div 1').style.backgroundColor='yellow';
-            document.getElementById('div 1').style.border='1px solid black';
-            document.getElementById('div 1').style.borderRadius='100px';
-            document.getElementById('div 1').style.textAlign='center';
-            document.getElementById('div 1').style.lineHeight='200px';
-            document.getElementById('div 1').style.verticalAlign='middle';
-
-        </script>
-    </body>
+</body>
 </html>
-

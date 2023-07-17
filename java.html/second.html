@@ -1,18 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            #div1 {
+                width: 100px ;
+                height: 100px;
+                background-color: rgb(119, 119, 10);
+                margin: 20px;
+            }
+            #div2 {
+                width: 100px;
+                height: 400px;
+                background-color: yellow;
+                margin: 20px;
+                overflow-y: scroll;
+            }
+        </style>
 
     </head>
-    <body>
-        <p id="demo"></p>
+    <body >
+
+        <button id="btn"> click me</button>
+        <button id="btn" onclick='firstFunction()'>click me</button>
+        <button id="btn" ondblclick='firstFunction()'>Double click me</button>
+        <br><br>
+
+        <div id='div1' onmouseover="makeBig()" onmouseout="makeSmall()"></div>
+        <br> <br>
+        <p id="demo">Demo</p>
+        <div id='div2' onscroll="scrollFunction()"> 
+             hello im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd 
+             im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esdim here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here
+              dgfjhg vevbk cvyh bngh hjk jkfdh gjub 
+             bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh 
+             hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg 
+             vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd 
+             im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub 
+             bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh hjk 
+             jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh
+             bngh hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg 
+             vevbk cvyh bngh hjk jkfdh gjub  bmmju esd v im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here 
+             dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd 
+             im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  
+             bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh gjub  bmmju esd im here dgfjhg vevbk cvyh bngh hjk jkfdh
+             gjub  bmmju esd </div>
+        <img src='antelope.jpg' onerror="imageError()">
 
         <script>
-           var car1='BMW';
-           var car2='Alto';
 
-           var para= document.getElementById('demo');
-           para.innerHTML= car1+ " "+ car2+ " Mercedes";
-           para.style.color='red';
+            document.getElementById('btn').onclick=firstFunction;
+            
+            var x= 0
+            function scrollFunction(){
+                x+=1;
+                document.getElementById('demo').innerHTML='You have scrolled '+ x +' times';
+            }
+
+            function imageError(){
+                alert('Failed to load image');
+            }
+            
+            function firstFunction(){
+                alert('Yes this is the webpage');
+            }
+            
+            function makeBig(){
+                document.getElementById('div 1').style.height="300px";
+                document.getElementById('div 1').style.width="300px";
+            }
+
+            function makeSmall(){
+                document.getElementById('div 1').style.height="100px";
+                document.getElementById('div 1').style.width="100px";
+            }
+           
 
         </script>
         
