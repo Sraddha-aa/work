@@ -4,17 +4,21 @@
   <head>
   </head>
 
-  <body>    
-    <p id="para1">This is para 1</p>
-    
-  
+  <body>  
+    <p id="demo">Demo</p> 
     <script>
-	  var cars=[' RangeRover',' BMW',' Mazda',' Mini cooper', ' alpha romeo'];
-      cars.push(' toyota');
-	  
-	  document.getElementById("para1").innerHTML=cars.sort();
+    document.getElementById('demo').innerHTML= yearsToRetire(25);
 
-	</script>
+    function sum(x,y){
+      var total= x+y;
+      return total;
+    }
+    function yearsToRetire(age) {
+      var yearsleft= 65-age;
+      return "You have "+yearsleft+" years to retire";
+    }
+
+    </script>
   </body>
 
 </html>

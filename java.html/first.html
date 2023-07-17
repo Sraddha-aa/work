@@ -1,69 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        #div1 {
-            width: 100px;
-            height: 100px;
-            background-color: rgb(119, 119, 10);
-            margin: 20px;
-        }
-        #div2 {
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-            margin: 20px;
-            overflow-y: scroll;
-        }
-    </style>
-</head>
-<body>
 
-    <button id="btn">Click me</button>
-    <button onclick="firstFunction()">Click me</button>
-    <button ondblclick="firstFunction()">Double click me</button>
-    <br><br>
+  <head>
+  </head>
 
-    <div id="div1" onmouseover="makeBig()" onmouseout="makeSmall()"></div>
-    <br><br>
-    <p id="demo">Demo</p>
-    <div id="div2" onclick="changeColor('blue')"></div>
-    <img src="antelope.jpg" onerror="imageError()">
-
-    <button onclick="changeColor('yellow')"> change color </button>
-    <button onclick="changeColor('red')"> change color</button>
-
+  <body>  
+    <p id="demo1"> </p>
+    <p id="demo2"> </p>
+    <p id="demo3"> </p>
+    
     <script>
-        document.getElementById('btn').onclick = firstFunction;
 
-        var x = 0;
-        function scrollFunction() {
-            x += 1;
-            document.getElementById('demo').innerHTML = 'You have scrolled ' + x + ' times';
+        /* while loop   */
+        var i = 0;
+        while (i<10){
+            document.getElementById('demo1').innerHTML+=i+"while"+"<br>";
+            i++;
+        }
+        
+
+        /*do while loop*/
+        var j= 0;
+        do{
+            document.getElementById('demo2').innerHTML+=j+"do"+"<br>";
+            j++;
+        }while(j<10)
+
+
+        /*for loop*/
+        for(var k=0; k<10; k++){
+            if(k==6){continue}
+            document.getElementById('demo3').innerHTML+=k+"for"+"<br>";
         }
 
-        function imageError() {
-            alert('Failed to load image');
-        }
 
-        function firstFunction() {
-            alert('Yes, this is the webpage');
-        }
-
-        function makeBig() {
-            document.getElementById('div1').style.height = '300px';
-            document.getElementById('div1').style.width = '300px';
-        }
-
-        function makeSmall() {
-            document.getElementById('div1').style.height = '100px';
-            document.getElementById('div1').style.width = '100px';
-        }
-
-        function changeColor(color) {
-            document.getElementById('div2').style.backgroundColor = color;
-        }
     </script>
-
-</body>
+  </body>
 </html>
