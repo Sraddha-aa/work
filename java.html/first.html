@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="p1"> This is green</p>
+        <p id="p2"> This is blue </p>
+        <p id="p3"> This is red</p>
+
+        <h1 class="heading">This is heading 1</h1>
+        <h1 class="heading">This is heading 2</h1>
+        <h1 class="heading">This is heading 3</h1>
+
+        <h3> Head 1</h3>
+        <h3> Head 2</h3>
+        <h3> Head 3</h3>
+        
+        <p id='demo'> This is the content</p>
+
+        <div id="div 1"> This is div 1</div>
+        <p id="para"> This is paragraph</p>
+
+        <script>
+            var x='hello ';
+            var y='world';
+            
+            x="john";
+
+            alert(x);
+
+            var para = document.getElementById('para');
+            para.innerHTML=x+y;
+            para.style.color='red';
+
+
+
+            document.getElementById('p2').style.color='blue';
+            document.getElementsByClassName('heading')[0].style.color='green';
+            document.getElementsByTagName('h3')[2].style.color='yellow';
+            document.getElementById('demo').innerHTML='The content is changed';
+
+            document.getElementById('div 1').style.height='200px';
+            document.getElementById('div 1').style.width='200px';
+            document.getElementById('div 1').style.backgroundColor='yellow';
+            document.getElementById('div 1').style.border='1px solid black';
+            document.getElementById('div 1').style.borderRadius='100px';
+            document.getElementById('div 1').style.textAlign='center';
+            document.getElementById('div 1').style.lineHeight='200px';
+            document.getElementById('div 1').style.verticalAlign='middle';
+
+        </script>
+    </body>
+</html>
+
